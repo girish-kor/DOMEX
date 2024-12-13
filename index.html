@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>✨ DOMEX ✨</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section: Navigation -->
+    <header>
+        <h1>DOMEX</h1>
+        <nav>
+            <ul>
+                <li><a href="#document-methods">Document Methods</a></li>
+                <li><a href="#node-methods">Node Methods</a></li>
+                <li><a href="#form-methods">Form Methods</a></li>
+                <li><a href="#style-manipulation">Style Manipulation</a></li>
+                <li><a href="#event-handling">Event Handling</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <!-- General Introduction Section -->
+            <section>
+                <h2>Welcome to My Website</h2>
+                <p>This website serves as an interactive guide to understanding various DOM methods and web technologies.</p>
+                <button id="loadMoreButton" onclick="loadMoreInfo()">Learn More</button>
+                <div id="additionalInfo" style="display: none; margin-top: 20px;">
+                    <h3>Understanding the DOM</h3>
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, where each object corresponds to a part of the page (elements, attributes, text). Through the DOM, JavaScript can interact with HTML and CSS to dynamically manipulate the page content, structure, and style.</p>
+
+                    <h3>What You Will Learn Here</h3>
+                    <ul>
+                        <li><strong>Document Methods:</strong> Learn how to access and modify elements in the DOM using methods like <code>getElementById</code>, <code>querySelector</code>, and others.</li>
+                        <li><strong>Node Methods:</strong> Understand how to create, append, remove, or clone DOM nodes with methods like <code>appendChild</code>, <code>removeChild</code>, etc.</li>
+                        <li><strong>Style Manipulation:</strong> Discover how to manipulate CSS styles dynamically using JavaScript to create interactive web pages.</li>
+                        <li><strong>Event Handling:</strong> Learn how to handle events like clicks, mouseovers, and form submissions to make your web page interactive.</li>
+                        <li><strong>Form Methods:</strong> Explore how to work with HTML forms, including validation, submitting data, and manipulating form elements.</li>
+                    </ul>
+
+                    <h3>Why Learn the DOM?</h3>
+                    <p>Learning how to manipulate the DOM is essential for creating interactive web applications. The DOM allows developers to dynamically change the content, structure, and style of a webpage, which makes it a critical tool for creating modern web experiences.</p>
+                    <p>In this guide, you will learn both basic and advanced DOM methods, from simple element selection to complex event handling and form processing.</p>
+
+                    <h3>Interactive Learning</h3>
+                    <p>Throughout this website, you will encounter interactive demos that demonstrate how each method works in real time. The goal is to give you hands-on experience and improve your understanding of how the DOM operates.</p>
+                </div>
+            </section>
+
+            <!-- Document Methods Section -->
+            <section id="document-methods" class="partition">
+                <h2>Document Methods</h2>
+                <div class="method-container">
+                    <h3>getElementById Demo</h3>
+                    <div id="getElementByIdDemo">
+                        <p id="targetElement">Click to change this text!</p>
+                        <button onclick="demonstrateGetElementById()">Change Text</button>
+                    </div>
+
+                    <h3>querySelector Demo</h3>
+                    <div class="query-selector-demo">
+                        <p class="demo-paragraph">First paragraph</p>
+                        <p class="demo-paragraph">Second paragraph</p>
+                        <button onclick="demonstrateQuerySelector()">Highlight First</button>
+                    </div>
+
+                    <h3>getElementByClassName Demo</h3>
+                    <div class="class-demo">
+                        <p class="demo-paragraph">First paragraph</p>
+                        <p class="demo-paragraph">Second paragraph</p>
+                        <button onclick="demonstrateGetElementByClassName()">Change Color of Paragraphs</button>
+                    </div>
+
+                    <h3>getElementsByTagName Demo</h3>
+                    <div class="tag-demo">
+                        <p>Paragraph one</p>
+                        <p>Paragraph two</p>
+                        <p>Paragraph three</p>
+                        <button onclick="demonstrateGetElementsByTagName()">Change All Paragraph Text</button>
+                    </div>
+
+                    <h3>querySelectorAll Demo</h3>
+                    <div class="query-all-demo">
+                        <p class="demo-paragraph">First paragraph</p>
+                        <p class="demo-paragraph">Second paragraph</p>
+                        <button onclick="demonstrateQuerySelectorAll()">Highlight All Paragraphs</button>
+                    </div>
+
+                    <h3>createElement Demo</h3>
+                    <div class="create-element-demo">
+                        <button onclick="demonstrateCreateElement()">Add New Paragraph</button>
+                        <div id="newParagraphContainer"></div>
+                    </div>
+
+                    <h3>innerHTML Demo</h3>
+                    <div class="inner-html-demo">
+                        <p id="innerHtmlTarget">This is some text.</p>
+                        <button onclick="demonstrateInnerHTML()">Change Content</button>
+                    </div>
+
+                    <h3>textContent Demo</h3>
+                    <div class="text-content-demo">
+                        <p id="textContentTarget">This is some text.</p>
+                        <button onclick="demonstrateTextContent()">Change Text Content</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Node Methods Section -->
+            <section id="node-methods" class="partition">
+                <h2>Node Methods</h2>
+                <div class="method-container">
+                    <h3>appendChild & removeChild Demo</h3>
+                    <div id="nodeMethodsDemo">
+                        <ul id="dynamicList">
+                            <li>Initial Item</li>
+                        </ul>
+                        <button onclick="addListItem()">Add Item</button>
+                        <button onclick="removeLastItem()">Remove Last Item</button>
+                    </div>
+
+                    <h3>createElement & appendChild Demo</h3>
+                    <div id="createElementDemo">
+                        <button onclick="createNewElement()">Create New List Item</button>
+                        <ul id="newList"></ul>
+                    </div>
+
+                    <h3>cloneNode Demo</h3>
+                    <div id="cloneNodeDemo">
+                        <ul id="cloneList">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                        </ul>
+                        <button onclick="cloneFirstItem()">Clone First Item</button>
+                    </div>
+
+                    <h3>insertBefore Demo</h3>
+                    <div id="insertBeforeDemo">
+                        <ul id="insertList">
+                            <li>Item A</li>
+                            <li>Item B</li>
+                        </ul>
+                        <button onclick="insertBeforeItem()">Insert Before First Item</button>
+                    </div>
+
+                    <h3>replaceChild Demo</h3>
+                    <div id="replaceChildDemo">
+                        <ul id="replaceList">
+                            <li>Old Item</li>
+                        </ul>
+                        <button onclick="replaceChildItem()">Replace First Item</button>
+                    </div>
+
+                    <h3>hasChildNodes Demo</h3>
+                    <div id="hasChildNodesDemo">
+                        <ul id="childNodesList">
+                            <li>Child Node 1</li>
+                        </ul>
+                        <button onclick="checkChildNodes()">Check if Node Has Children</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Style Manipulation Section -->
+            <section id="style-manipulation" class="partition">
+                <h2>Style Manipulation</h2>
+                <div id="styleDemo">
+                    <div class="styleable-box" id="box">Hover and click me!</div>
+                    <button onclick="changeStyle()">Change Style</button>
+                    <button onclick="toggleVisibility()">Toggle Visibility</button>
+                    <button onclick="changeBackgroundColor()">Change Background Color</button>
+                    <button onclick="toggleBoxShadow()">Toggle Box Shadow</button>
+                    <button onclick="setInlineStyles()">Set Inline Styles</button>
+                    <button onclick="resetStyles()">Reset Styles</button>
+                </div>
+
+                <h3>CSS Class Manipulation</h3>
+                <div id="classDemo">
+                    <div class="box">I have class-based styles!</div>
+                    <button onclick="toggleClass()">Toggle Class</button>
+                </div>
+
+                <h3>Hover and Style Manipulation</h3>
+                <p>Hover over the box below:</p>
+                <div class="hoverable-box" id="hoverBox">Hover over me!</div>
+            </section>
+
+            <!-- Event Handling Section -->
+            <section id="event-handling" class="partition">
+                <h2>Event Handling</h2>
+                <div id="eventDemo">
+                    <button id="dynamicEventButton">Add Event Listener</button>
+                    <p id="eventLog">Event log will appear here</p>
+
+                    <h3>Click Event</h3>
+                    <button onclick="logClickEvent()">Click Me</button>
+
+                    <h3>Mouseover Event</h3>
+                    <div id="hoverArea">Hover over me!</div>
+
+                    <h3>Keypress Event</h3>
+                    <input type="text" id="keypressInput" placeholder="Type something and see the log" />
+
+                    <h3>Dynamic Event Listener</h3>
+                    <p>Click the button below to dynamically add an event listener to another button:</p>
+                    <button id="targetButton">Target Button</button>
+                </div>
+            </section>
+
+            <!-- Form Methods Section -->
+            <section id="form-methods" class="partition">
+                <h2>Form Methods</h2>
+                <form id="domExplorerForm">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button type="button" onclick="validateForm()">Validate Form</button>
+                    <button type="button" onclick="resetForm()">Reset Form</button>
+                    <button type="button" onclick="submitForm()">Submit Form</button>
+                </form>
+
+                <h3>Form Methods Demonstration</h3>
+                <button onclick="showFormData()">Show Form Data</button>
+                <button onclick="disableFormElements()">Disable Form Elements</button>
+                <button onclick="enableFormElements()">Enable Form Elements</button>
+
+                <div id="formOutput"></div>
+            </section>
+        </div>
+    </main>
+
+     <!-- WhatsApp Chat Section -->
+    <div class="whatsapp-chat-container">
+        <div class="chat-header">
+            <h3>Chat with Us</h3>
+        </div>
+
+        <!-- Chat Window to Display Messages -->
+        <div class="chat-window">
+            <div class="message-container" id="messageContainer">
+                <!-- Messages will appear here -->
+            </div>
+        </div>
+
+        <!-- WhatsApp Message Input Bar -->
+        <div class="whatsapp-message-bar">
+            <input
+                type="text"
+                id="whatsappMessage"
+                placeholder="Type your message..."
+                aria-label="Type your message here for WhatsApp"
+                required
+            >
+            <button
+                id="whatsappChatButton"
+                onclick="sendMessage()"
+                aria-label="Send message to WhatsApp"
+            >
+                Send
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-header">
+                <h3>Created by Girish Kor</h3>
+                <p>&copy; 2024 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JavaScript/docMethods.js"></script>
+    <script src="./JavaScript/eventHandeling.js"></script>
+    <script src="./JavaScript/formMethods.js"></script>
+    <script src="./JavaScript/nodeMethods.js"></script>
+    <script src="./JavaScript/styleManipulation.js"></script>
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
