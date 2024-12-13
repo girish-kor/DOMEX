@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    user-select: none; /* Prevent text selection */
+    user-select: none; 
 }
 
 /* Body Styling */
 body {
-    background: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text color */
+    background: #121212; 
+    color: #e0e0e0; 
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
@@ -18,7 +18,8 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding-bottom: 80px; /* Space for footer */
+    padding-bottom: 80px;
+    max-width: 1200px;
 }
 
 /* Header Section */
@@ -32,7 +33,7 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     margin: 20px 0;
     border: 2px solid gold;
-    animation: shine 1.5s infinite; /* Animation for shine effect */
+    animation: shine 1.5s infinite; 
     width: 100%;
     max-width: 1200px;
 }
@@ -41,7 +42,7 @@ header h1 {
     font-size: 32px;
     color: gold;
     font-weight: bold;
-    text-shadow: 0 0 10px gold, 0 0 20px gold; /* Glowing effect */
+    text-shadow: 0 0 10px gold, 0 0 20px gold; 
 }
 
 /* Navigation Styling */
@@ -49,10 +50,12 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    list-style-type: none;
 }
 
 nav ul li {
     padding: 5px;
+    list-style-type: none;
 }
 
 nav ul li a {
@@ -62,6 +65,7 @@ nav ul li a {
     text-transform: uppercase;
     transition: 0.3s;
     text-decoration: none;
+    list-style-type: none;
 }
 
 nav ul li a:hover {
