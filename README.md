@@ -1,22 +1,24 @@
 # DOMEX - DOM Manipulation Explorer
 
-DOMEX is an interactive web tool designed to demonstrate various Document Object Model (DOM) manipulation methods in a user-friendly and visually appealing way. It serves as a hands-on resource for developers to explore and test different DOM-related techniques.
+DOMEX is an interactive web tool designed to demonstrate various Document Object Model (DOM) manipulation methods in a user-friendly, visually appealing, and occasionally cheeky way! It’s a fun playground for developers to dive into the world of DOM manipulation with ease—and maybe even a little mischief. 😏
 
 ## Live Demo
 
-You can try out the live version of the tool by visiting the following link:  
+Feeling curious? Take the DOMEX for a spin in real-time!  
 [DOMEX - Live Demo](https://domex.onrender.com)
 
 ## Features
-- **Document Methods**: Explore how to manipulate the document structure using JavaScript methods.
-- **Node Methods**: Learn and test methods for manipulating nodes within the DOM.
-- **Event Handling**: Understand event handling and how to interact with user actions like clicks and form submissions.
-- **Form Methods**: Explore how to manipulate forms, validate inputs, and handle custom validation functions.
+- **Document Methods**: Get your hands dirty manipulating document structure like a DOM wizard. ✨
+- **Node Methods**: Learn how to tinker with nodes—insert, remove, and twist them to your will. 😈
+- **Event Handling**: Explore event handling, where clicks, form submissions, and all sorts of user interactions will come alive. 🎉
+- **Form Methods**: You know what they say about forms—always validate them before things get wild. 🔥
 
 ## Installation
 
-Clone the repository to your local machine:
+Want to get in on the action? Clone the repository to your local machine and start making DOM magic happen. Here's how:
 
 ```bash
 git clone https://github.com/girish-kor/DOMEX.git
-cd domex
+cd DOMEX
+npm install
+npm start
