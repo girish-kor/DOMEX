@@ -18,5 +18,5 @@ You can try out the live version of the tool by visiting the following link:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/domex.git
+git clone https://github.com/girish-kor/DOMEX.git
 cd domex
